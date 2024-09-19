@@ -50,12 +50,12 @@ The journey to cloud native CBT has just begun the implementation phase. The Kub
 At Veeam, our engineering culture introduction has [this quote](https://quoteinvestigator.com/2021/05/04/no-plan/):
 
 > **No plan survives contact with the enemy.**
-> Attributed to Helmuth von Moltke (“The Elder”), 1800-1891
+Attributed to Helmuth von Moltke (“The Elder”), 1800-1891
 
 As CSI CBT enters alpha phase, you can help with adoption and improvements: please spread the word and provide feedback that can be incorporated into the beta phase. 
-- For storage vendors: is adopting CSI CBT as simple as exposing existing functionality via the new CSI CBT sidecar container API? That depends on the current architecture of the CSI driver and your underlying storage CBT functionality. Please let us know if the example is helpful.
-- For backup vendors: shouldn't CSI CBT adoption be as simple as consuming the new Kubernetes APIs with a supporting CSI CBT storage vendor? Where are the mock providers and tests, do they meet your needs?
-- For the Kubernetes community: please reach out to your backup and storage vendors and projects and ask them to adopt CSI CBT to improve your data protection!
+- __For storage vendors and projects:__ is adopting CSI CBT as simple as exposing existing functionality via the new CSI CBT sidecar container API? That depends on the current architecture of the CSI driver and your underlying storage CBT functionality. Please let us know if the example is helpful.
+- __For backup vendors and projects:__ shouldn't CSI CBT adoption be as simple as consuming the new Kubernetes APIs with a supporting CSI CBT storage vendor? Where are the mock providers and tests, do they meet your needs?
+- __For the Kubernetes community:__ please reach out to your backup and storage vendors and projects and ask them to adopt CSI CBT to improve your data protection!
 
 Veeam has put CSI CBT on our roadmap: is it on yours?
 
