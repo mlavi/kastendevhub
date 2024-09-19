@@ -47,10 +47,9 @@ More technical resources:
 
 The journey to cloud native CBT has just begun the implementation phase. The Kubernetes DPWG and CSI Consortium want your feedback on CSI CBT!
 
-At Veeam, our engineering culture introduction has [this quote](https://quoteinvestigator.com/2021/05/04/no-plan/):
-
+At Veeam, our engineering culture introduction has [this quote](https://quoteinvestigator.com/2021/05/04/no-plan/) (attributed to Helmuth von Moltke (“The Elder”), 1800-1891):
 > **No plan survives contact with the enemy.**
-Attributed to Helmuth von Moltke (“The Elder”), 1800-1891
+
 
 As CSI CBT enters alpha phase, you can help with adoption and improvements: please spread the word and provide feedback that can be incorporated into the beta phase. 
 - __For storage vendors and projects:__ is adopting CSI CBT as simple as exposing existing functionality via the new CSI CBT sidecar container API? That depends on the current architecture of the CSI driver and your underlying storage CBT functionality. Please let us know if the example is helpful.
