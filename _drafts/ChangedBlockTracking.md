@@ -35,7 +35,9 @@ The intended audience for CSI CBT implementation is Kubernetes cloud native Back
     - The KEP is currently a “v1alpha” implementation of the CSI specification = https://github.com/kubernetes/enhancements/pull/4082
 
 The following security diagram shows how a backup software vendor and a storage vendor would orchestrate and provide CBT access to a VolumeSnapShot:
- 
+
+![CSI-CBT-security](CSI-CBT-security.png)
+
 More technical resources:
 - [KEP 3314 Design Slides and Diagrams](https://docs.google.com/presentation/d/11nCmMkOEm5sY7zGQeXmsAV2wR7mb8HUYPKWyXhyD86o/edit#slide=id.p)
 -	Cloud Native Rejekts 2023 talk: “Revolutionizing Data Backup in Kubernetes: Unlocking the Power of Change Block Tracking With CSI“ [abstract](https://cfp.cloud-native.rejekts.io/cloud-native-rejekts-na-chicago-2023/talk/HGPYB3/) and [video](https://www.youtube.com/watch?v=sV1skj7OW7Y&list=PLnfCaIV4aZe-4zfJeSl1bN9xKBhlIEGSt&index=29) (30 minutes)
