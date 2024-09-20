@@ -10,7 +10,7 @@ Because nearly every storage provider offers CBT, it is surprising that cloud na
 
 ## Stateful Kubernetes Workloads and Storage
 
-[Kubernetes just celebrated it's tenth birthday](https://www.cncf.io/blog/2024/06/07/kubernetes-is-ten-years-old/) and stateful workloads are normal today, but when Kubernetes released `StatefulSets` in 2018, it took time for [cloud native storage to follow and accelerate over the latter half of Kubernetes life](https://www.veeam.com/blog/stateful-vs-stateless-kubernetes.html). The Container Storage Interface (CSI), version 1.0 was also adopted in 2018 with [Kubernetes 1.13](https://kubernetes.io/blog/2018/12/03/kubernetes-1-13-release-announcement/).
+[Kubernetes recently celebrated it's tenth birthday](https://www.cncf.io/blog/2024/06/07/kubernetes-is-ten-years-old/) and stateful workloads are normal today, but when Kubernetes released `StatefulSets` in 2018, it took time for [cloud native storage to follow and accelerate over the latter half of Kubernetes life](https://www.veeam.com/blog/stateful-vs-stateless-kubernetes.html). The Container Storage Interface (CSI), version 1.0 was also adopted in 2018 with [Kubernetes 1.13](https://kubernetes.io/blog/2018/12/03/kubernetes-1-13-release-announcement/).
 
 CSI provides a uniform Application Programmer Inferface (API) for different storage providers. CSI is an independent consortium that publishes industry-wide specifications and storage vendors create CSI drivers, which are installed onto Kubernetes clusters. All  proprietary, "in-tree" storage drivers in the Kubernetes code base are in process of removal or have been removed in favor of CSI. Fun fact: CSI is adopted by other cloud native platforms, such as Cloud Foundry, Apache Mesos, and Hashicorp Nomad!
 
@@ -45,7 +45,7 @@ More technical resources:
 
 ## Conclusion and Calls to Action
 
-The journey to cloud native CBT has just begun the implementation phase. The Kubernetes DPWG and CSI Consortium want your feedback on CSI CBT!
+The journey to cloud native CBT has begun the implementation phase. The Kubernetes DPWG and CSI Consortium want your feedback on CSI CBT!
 
 At Veeam, our engineering culture introduction has [this quote](https://quoteinvestigator.com/2021/05/04/no-plan/) (attributed to Helmuth von Moltke (“The Elder”), 1800-1891):
 > **No plan survives contact with the enemy.**
