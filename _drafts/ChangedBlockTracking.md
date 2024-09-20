@@ -30,8 +30,8 @@ The intended audience for CSI CBT implementation is Kubernetes cloud native Back
 
 - Storage vendors and projects should adopt and deploy the SIG-Storage CSI CBT metadata service sidecar container and custom resource(s), then the CSI driver should implement:
     - https://github.com/kubernetes-csi/external-snapshot-metadata
-    - Add new "SnapshotMetadata service" to allow the container orchestrator to obtain allocated or changed block metadata for snapshots = https://github.com/container-storage-interface/spec/blob/v1.10.0/spec.md#snapshot-metadata-service-rpcs
--	Kubernetes APIs, used by backup providers, which consume CSI CBT via gRPC:
+    - Add the new `SnapshotMetadata` service to allow the container orchestrator to obtain allocated or changed block metadata for snapshots = https://github.com/container-storage-interface/spec/blob/v1.10.0/spec.md#snapshot-metadata-service-rpcs
+- Kubernetes APIs, used by backup providers, which consume CSI CBT via gRPC:
     - The KEP is currently a “v1alpha” implementation of the CSI specification = https://github.com/kubernetes/enhancements/pull/4082
 
 The following security diagram shows how a backup software vendor and a storage vendor would orchestrate and provide CBT access to a VolumeSnapShot:
