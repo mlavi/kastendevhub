@@ -20,7 +20,7 @@ The [Kubernetes Data Protection Working Group](https://github.com/kubernetes/com
 
 A simplified series of events follows; they describe how CBT was added to CSI and Kubernetes.
 
-In May 2022, DPWG began a [Kubernetes Enhancement Proposal (KEP) #3314](https://github.com/kubernetes/enhancements/pull/4082): Changed Block Tracking. Veeam joined the effort soon afterwards. With guidance and review from SIG leadership, peer SIGS, vendors, and the Kubernetes community, the KEP went through three major redesigns. Each progressed through repeated conceptual phases to design review and defense, every step improving the scope to address issues and gaps. The CBT design improved after reviews with SIG API and SIG Security helped incorporate Kubernetes architecture and security best practices. At last, in 2023, the third design was approved by the DPWG, a code prototype was completed, and then a proposal was made to add CBT to the CSI specification.
+In May 2022, DPWG began a [Kubernetes Enhancement Proposal (KEP) #3314](https://github.com/kubernetes/enhancements/pull/4082): Changed Block Tracking. Veeam joined the effort soon afterwards. With guidance and review from SIG leadership, vendors, and the Kubernetes community, the KEP went through three major redesigns. Each progressed through repeated conceptual phases to design review and defense, every step improving the scope to address issues and gaps. The CBT design improved after reviews with SIG-API and SIG-Security helped incorporate Kubernetes architecture and security best practices. At last, in 2023, the third design was approved by the DPWG, a code prototype was completed, and then a proposal was made to add CBT to the CSI specification.
 
 The [CSI specification 1.11.0](https://github.com/container-storage-interface/spec/releases/tag/v1.10.0) with CBT via the `SnapshotMetadata` service was recently published, this updated KEP-3314 status to “implementable” in June 2024. The first target was Kubernetes 1.31 as alpha APIs with the prototype code, but gearing up pipelines to test, add documentation, and learning other Kubernetes and CSI maintainer tasks has caused it to slip to Kubernetes 1.32.
 
@@ -51,7 +51,7 @@ At Veeam, our engineering culture introduction has [this quote](https://quoteinv
 > **No plan survives contact with the enemy.**
 
 
-As CSI CBT enters alpha phase, you can help with adoption and improvements: please spread the word and provide feedback that can be incorporated into the beta phase. 
+As CSI CBT enters Kubernetes alpha phase, you can help with adoption and improvements: please spread the word and provide feedback that can be incorporated into the beta phase. 
 - __For storage vendors and projects:__ is adopting CSI CBT as simple as exposing existing functionality via the new CSI CBT sidecar container API? That depends on the current architecture of the CSI driver and your underlying storage CBT functionality. Please let us know if the example is helpful.
 - __For backup vendors and projects:__ shouldn't CSI CBT adoption be as simple as consuming the new Kubernetes APIs with a supporting CSI CBT storage vendor? Where are the mock providers and tests, do they meet your needs?
 - __For the Kubernetes community:__ please reach out to your backup and storage vendors and projects and ask them to adopt CSI CBT to improve your data protection!
