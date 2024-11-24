@@ -1,6 +1,6 @@
 #  Accelerating Data Protection with Changed Block Tracking
 
-When IT, virtualization, backup, storage, and operations teams explore Kubernetes, they compare storage and data protection capabilities with traditional bare metal and virtual machine (VM) facilities. Because cloud native architecture is inherently distributed, API-driven, and loosely coupled, cloud native operations require new tooling and skills to achieve the same disaster recovery (DR) business outcomes. While many cloud native storage benefits are impressive, one critical area is still missing: Changed block tracking (CBT).
+When IT, virtualization, backup, storage, and operations teams explore Kubernetes, they compare storage and data protection capabilities with traditional bare metal and virtual machine (VM) facilities. Because cloud native architecture is inherently distributed, API-driven, and loosely coupled, cloud native operations require new tooling and skills to achieve the same disaster recovery (DR) business outcomes. While many cloud native storage benefits are impressive, one critical area is still missing: Changed Block Tracking (CBT).
 
 In the simplest case, CBT improves [backup efficiency](https://en.wikipedia.org/wiki/Incremental_backup) by finding and transmitting only the difference between what currently lives in storage and the most recent backup image. CBT can find that there has been little to no change since the last backup and make a nearly instantaneous new backup with minimal consumption of time, CPU, memory, and storage. Making backup windows short and lightweight also helps organizations perform backups at an increased frequency, which reduces the recovery point objectives (RPOs), or the amount of data loss incurred.
 
@@ -60,6 +60,10 @@ As CSI CBT enters its alpha phase, you can help with adoption and improvements. 
 
 Veeam has put CSI CBT on its roadmap: Is it on yours?
 
-Help CSI CBT be a success. Join the [DPWG bi-weekly meeting or reach out on the Slack channel and mailing list](https://github.com/kubernetes/community/blob/master/wg-data-protection/README.md#meetings); we are available to answer questions! Plus, register to attend the [Kubernetes Data Protection Working Group Deep Dive](https://kccncna2024.sched.com/event/1hovn/kubernetes-data-protection-wg-deep-dive-dave-smith-uchida-veeam?iframe=no&w=100%25&sidebar=yes&bg=no) talk on Wednesday, November 13 at KubeCon + CloudNativeCon North America.
+Help CSI CBT be a success. Join the [DPWG bi-weekly meeting or reach out on the Slack channel and mailing list](https://github.com/kubernetes/community/blob/master/wg-data-protection/README.md#meetings); we are available to answer questions! Plus, register to attend the [Kubernetes Data Protection Working Group Deep Dive](https://kccncna2024.sched.com/event/1hovn/kubernetes-data-protection-wg-deep-dive-dave-smith-uchida-veeam?iframe=no&w=100%25&sidebar=yes&bg=no) talk on Wednesday, November 13 at 
 
 Every day, more people ask, "is now the time to migrate to Kubernetes?" Bringing CSI CBT to cloud native storage removes a critical disadvantage when compared to traditional infrastructure -- longer RPOs. At Veeam, we have helped steward the data protection industry forward with the help of incredible partners in the Kubernetes DPWG and CSI Consortium. We are eager to collaborate with the cloud native ecosystem and community to implement CSI CBT and drive world-class cloud native data protection forward!
+
+---
+
+This article was edited and originally published on 2024-10-09 at https://thenewstack.io/kubernetes-advances-cloud-native-data-protection-share-feedback/ to promote KubeCon + CloudNativeCon North America in November; it has since been updated.
